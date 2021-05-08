@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import Navigation from "./Navigation"
 
-
-
 export default function Navbar() {
 
     const [navFixed, setNavFixed] = useState(true);

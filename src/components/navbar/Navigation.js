@@ -46,21 +46,35 @@ export default function Navigation() {
         <style jsx>
           {`
             .container {
-              width: 0;
+              width: 100vw;
               height:60px;
             }
             ul {
+              position:absolute;
+              left:0;
+              top:0;
+              display:flex;
+              flex-direction: column;
+              justify-content:center;
+              align-content:center;
+          
               opacity: 0;
-              width: 100%;
+              transition: opacity 0.3s;
+              width:100vw;
+              height:100vh;
+              background:rgba(256,256,256, 0.8);
               list-style: none;
             }
             .active ul {
               opacity: 1;
-              // transform: translateY(0);
+            
+              transition: opacity 0.3s;
+              transform:ease-in-out 1s;
             }
             li {
               // margin-bottom: 1.75rem;
               font-size: 2rem;
+              text-align:center;
               // padding: 0 1.5rem 0 0;
             }
             li:last-child {
