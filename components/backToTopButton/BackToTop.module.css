@@ -1,0 +1,30 @@
+.container {
+  position: fixed;
+  bottom: 4rem;
+  right: 0;
+  cursor: pointer;
+  transform: rotate(-90deg);
+}
+
+.container__text {
+  position: relative;
+}
+
+.container__text:before,
+.container__text:after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  height: 1px;
+  background-color: #222;
+}
+
+.container__text:before {
+  left: 5rem;
+  width: 40px;
+}
+
+.container__text:after {
+  left: -1rem;
+  width: 10px;
+}
