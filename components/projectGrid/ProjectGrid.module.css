@@ -1,0 +1,121 @@
+.container__item:nth-child(1) {
+  grid-area: one;
+  /* background-image: url("/images/projects/cogen.jpg"); */
+}
+
+.container__item:nth-child(2) {
+  grid-area: two;
+  background-image: url("/images/projects/metrostal.png");
+}
+
+.container__item:nth-child(3) {
+  grid-area: three;
+  background-image: url("/images/projects/iloftu.png");
+}
+
+.container__item:nth-child(4) {
+  grid-area: four;
+  background-image: url("/images/projects/cogen.jpg");
+}
+
+.container__item:nth-child(5) {
+  grid-area: five;
+  background-image: url("/images/projects/vivapolonia.png");
+}
+
+.container__item:nth-child(6) {
+  grid-area: six;
+  background-image: url("/images/projects/stressless.jpg");
+  background-position: top center;
+}
+
+.container__item:nth-child(7) {
+  grid-area: seven;
+  background-image: url("/images/projects/metrostalltd.png");
+  background-position: top left;
+}
+
+.container__item:nth-child(8) {
+  grid-area: eight;
+  background-image: url("/images/projects/gmoodsball.jpg");
+}
+
+.container {
+  padding: 50px 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 100px 200px 250px;
+  grid-template-areas:
+    "one seven six "
+    "five seven six "
+    "five four three "
+    "two four eight ";
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 50px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six"
+      "seven seven";
+  }
+  .container__item {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 50px 0 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 200px 200px 200px 200px 200px 200px;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven";
+  }
+  .container__item {
+    background-size: contain;
+  }
+}
+
+.container__item {
+  position: relative;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.container__item:hover .container__text {
+  display: flex;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.container__text {
+  display: none;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__subtitle {
+  color: #ff286e;
+}

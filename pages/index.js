@@ -3,19 +3,22 @@ import { Hero } from '../components/hero/Hero'
 import { Button } from '../components/button/Button'
 // import { SectionTitle } from '../components/sectionTitle/SectionTitle'
 import { OfferGrid } from '../components/offerGrid/OfferGrid'
+import { ProjectGrid } from '../components/projectGrid/ProjectGrid'
+import Carousel from '../components/Carousel/Carousel'
+
 
 
 function HomePage() {
+
   return ( 
     <>
       <Layout>
         <Hero />
         {/* <SectionTitle title={'What can I do for you?'} subtitle={'Main offer'}/> */}
         <OfferGrid/>
-        <h1>bareja studio</h1>
-        <h1>bareja studio</h1>
-        <h1>bareja studio</h1>
-        <h2>jakaś treść</h2>
+        <ProjectGrid/>
+        {/* <Carousel/> */}
+
         <p>dalej</p>
         <Button />
       </Layout>
