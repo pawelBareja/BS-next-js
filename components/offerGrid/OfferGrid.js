@@ -5,11 +5,12 @@ import { gridItems } from './gridItems'
 
 export const OfferGrid = () => {
   return (
-    <div className={styles.container}>
+    <div id={'offer'} className={styles.container}>
       <div className={styles.container__item}>
         <div className={styles.container__text}>
+          <p className={styles.container__subtitle}>The offer</p>
           <h3>What can I do for you ?</h3>
-          <p className={styles.container__subtitle}>Services</p>
+
         </div>
       </div>
 

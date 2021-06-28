@@ -11,51 +11,51 @@ const menuList = menu_items.map(item => <li key={item.page}><Link href={`/${item
 const contactItems = company_data.map(item => <li key={item.name}>{item.name}</li>)
 
 const Footer = () => {
-	return (
-		<li>
-			<div className="footer">
-				<div className='footer__grid'>
-					<div className='footer__item'>
-						<img
-							src='/images/logo.svg'
-							width={100}
-							height={50}
-							alt={'logo bareja studio'}
-						/>
-					</div>
-					<div className='footer__item'>
-						<h3>Quick Menu</h3>
-						<ul>
-							{menuList}
-						</ul>
-					</div>
-					<div className='footer__item'>
-						<h3>Favorite Projects</h3>
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul></div>
-					<div className='footer__item'>
-						<h3>Quick Contact</h3>
-						<ul>
-							{contactItems}
-						</ul></div>
-				</div>
+  return (
+    <li>
+      <div className="footer">
+        <div className='footer__grid'>
+          <div className='footer__item'>
+            <img
+              src='/images/logo.png'
+              width={100}
+              height={50}
+              alt={'logo bareja studio'}
+            />
+          </div>
+          <div className='footer__item'>
+            <h3>Quick Menu</h3>
+            <ul>
+              {menuList}
+            </ul>
+          </div>
+          <div className='footer__item'>
+            <h3>Favorite Projects</h3>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul></div>
+          <div className='footer__item'>
+            <h3>Quick Contact</h3>
+            <ul>
+              {contactItems}
+            </ul></div>
+        </div>
 
-				<Copyright />
-			</div>
-			<style jsx>
-				{`
+        <Copyright />
+      </div>
+      <style jsx>
+        {`
         .footer__grid{
-            background:gray;
             display:flex;
             flex-direction:row;
             justify-content:flex-start;
             flex-wrap:wrap;
             padding:5px;
+			border-bottom: 1px solid #ededed;
         }
         .footer__item{
             flex-grow:1;
@@ -64,12 +64,16 @@ const Footer = () => {
         .footer_item ul li a {
             text-transform:capitalise;
         }
+		h3 {
+			font-size:14px;
+			text-transform:uppercase;
+		}
 
         `
-				}
-			</style>
-		</li>
-	)
+        }
+      </style>
+    </li>
+  )
 }
 
 export default Footer

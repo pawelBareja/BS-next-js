@@ -1,45 +1,45 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Burger from './Burger'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
 
 export default function Navigation() {
   const router = useRouter()
   const [active, setActive] = useState(false)
+
+  useEffect(()=>
+    console.log(router)
+  ,[router])
   return (
     <>
       <Burger active={active} onClick={() => setActive(!active)} />
       <div className={'container ' + (active ? 'active' : '')}>
         <ul>
           <li>
-            <Link href="/">
-              <a className={router.pathname === '/offer' ? 'active' : null}>Offer</a>
+            <Link href="/#offer">
+              <a className={router.asPath === '/#offer' ? 'active' : null}>offer</a>
             </Link>
           </li>
           <li>
-            <Link href="/projects">
+            <Link href="/#projects">
               <a
                 className={
-                  router.pathname.startsWith('/projects') ? 'active' : null
+                  router.asPath.startsWith('/#projects') ? 'active' : null
                 }
               >
-                Projects
+                projects
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/">
-              <a className={router.pathname === '/offer' ? 'active' : null}>How it works</a>
+            <Link href="/#about">
+              <a className={router.asPath === '/#about' ? 'active' : null}>about</a>
             </Link>
           </li>
           <li>
             <Link href="/">
-              <a className={router.pathname === '/' ? 'active' : null}>about</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <a className={router.pathname === '/contact' ? 'active' : null}>Contact</a>
+              <a className={router.asPath === '/contact' ? 'active' : null}>contact</a>
             </Link>
           </li>
         </ul>
@@ -82,7 +82,7 @@ export default function Navigation() {
               margin-bottom: 0;
             }
             .active {
-              color: #ffa4c1;
+              color: #ff286e;
             }
 
             @media (min-width: 769px) {
