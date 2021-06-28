@@ -4,10 +4,10 @@ import { Hero } from '../components/hero/Hero';
 import { OfferGrid } from '../components/offerGrid/OfferGrid';
 import { ProjectGrid } from '../components/projectGrid/ProjectGrid';
 import Carousel from '../components/Carousel/Carousel';
-import { About } from  '../components/about/About'
-import { Form } from  '../components/contactForm/Form'
+import { About } from '../components/about/About'
+import { Form } from '../components/contactForm/Form'
 
-function HomePage() {
+function HomePage () {
   return (
     <>
       <Layout>
@@ -29,9 +29,9 @@ function HomePage() {
             '/images/companies/marine.png',
           ]}
         />
-        <About/>
+        <About />
         <h3>Let's talk</h3>
-        <Form/>
+        <Form />
       </Layout>
       <style jsx>{`
         // div {
