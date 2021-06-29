@@ -5,7 +5,7 @@ import { OfferGrid } from '../components/offerGrid/OfferGrid';
 import { ProjectGrid } from '../components/projectGrid/ProjectGrid';
 import Carousel from '../components/Carousel/Carousel';
 import { About } from '../components/about/About'
-import { Form } from '../components/contactForm/Form'
+import { ContactForm } from '../components/contactForm/ContactForm'
 
 function HomePage () {
   return (
@@ -31,7 +31,7 @@ function HomePage () {
         />
         <About />
         <h3>Let's talk</h3>
-        <Form />
+        <ContactForm />
       </Layout>
       <style jsx>{`
         // div {

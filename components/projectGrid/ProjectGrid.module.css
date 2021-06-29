@@ -5,39 +5,39 @@
 
 .container__item:nth-child(2) {
   grid-area: two;
-  background-image: url("/images/projects/metrostal.png");
+  background-image: url('/images/projects/metrostal.png');
 }
 
 .container__item:nth-child(3) {
   grid-area: three;
-  background-image: url("/images/projects/iloftu.png");
+  background-image: url('/images/projects/iloftu.png');
 }
 
 .container__item:nth-child(4) {
   grid-area: four;
-  background-image: url("/images/projects/cogen.jpg");
+  background-image: url('/images/projects/cogen.jpg');
 }
 
 .container__item:nth-child(5) {
   grid-area: five;
-  background-image: url("/images/projects/vivapolonia.png");
+  background-image: url('/images/projects/vivapolonia.png');
 }
 
 .container__item:nth-child(6) {
   grid-area: six;
-  background-image: url("/images/projects/stressless.jpg");
+  background-image: url('/images/projects/stressless.jpg');
   background-position: top center;
 }
 
 .container__item:nth-child(7) {
   grid-area: seven;
-  background-image: url("/images/projects/metrostalltd.png");
+  background-image: url('/images/projects/metrostalltd.png');
   background-position: top left;
 }
 
 .container__item:nth-child(8) {
   grid-area: eight;
-  background-image: url("/images/projects/gmoodsball.jpg");
+  background-image: url('/images/projects/gmoodsball.jpg');
 }
 
 .container {
@@ -46,10 +46,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 200px 100px 200px 250px;
   grid-template-areas:
-    "one seven six "
-    "five seven six "
-    "five four three "
-    "two four eight ";
+    'one seven six '
+    'five seven six '
+    'five four three '
+    'two four eight ';
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   justify-items: stretch;
@@ -63,10 +63,10 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 200px 200px 200px;
     grid-template-areas:
-      "one two"
-      "three four"
-      "five six"
-      "seven seven";
+      'one two'
+      'three four'
+      'five six'
+      'seven seven';
   }
   .container__item {
     background-size: contain;
@@ -80,13 +80,13 @@
     grid-template-columns: 1fr;
     grid-template-rows: 150px 200px 200px 200px 200px 200px 200px;
     grid-template-areas:
-      "one"
-      "two"
-      "three"
-      "four"
-      "five"
-      "six"
-      "seven";
+      'one'
+      'two'
+      'three'
+      'four'
+      'five'
+      'six'
+      'seven';
   }
   .container__item {
     background-size: contain;
@@ -104,16 +104,21 @@
 }
 
 .container__item:hover .container__text {
+  visibility: visible;
+  transition: all 0.5s ease-in;
   display: flex;
   background: rgba(255, 255, 255, 0.8);
+  /* transition: all 0.5s ease; */
 }
 
 .container__text {
+  visibility: hidden;
   display: none;
   height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* transition: all 0.5s ease; */
 }
 
 .container__subtitle {
