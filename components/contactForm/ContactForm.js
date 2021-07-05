@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import styles from './form.module.css'
+import axios from 'axios';
+
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
 const formSchema = Yup.object().shape( {
-  Name: Yup.string().required( 'Required field' ),
-  Email: Yup.string()
+  name: Yup.string().required( 'Required field' ),
+  email: Yup.string()
     .email( 'Invalid E-mail address' )
     .required( 'Required field' ),
-  Phone: Yup.string()
-    .matches( phoneRegExp, 'Phone nmuber is invalid' )
+  phone: Yup.string()
+    .matches( phoneRegExp, 'phone number looks to be invalid, check it please' )
     .required( 'Required field' ),
-  Message: Yup.string().required( 'Required field' ),
+  message: Yup.string().required( 'Required field' ),
 } )
 
 export const ContactForm = () => {
@@ -45,52 +48,57 @@ export const ContactForm = () => {
     <>
       <Formik
         initialValues={{
-          Name: '',
-          Email: '',
-          Phone: '',
-          Message: '',
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
         }}
         onSubmit={handleOnSubmit}
         validationSchema={formSchema}
       >
         {( { isSubmitting } ) => (
-          <Form className="form" id="fs-frm" noValidate>
+          <Form className={styles.form} id="fs-frm" noValidate>
             <Field
-              id="Name"
+              className={styles.form__field}
+              id="name"
               type="text"
-              name="Name"
+              name="name"
               placeholder="What's your name?"
             />
             <ErrorMessage
-              name="Name"
-              className="errorMsg"
+              name="name"
+              className={styles.form__error}
               component="p"
             />
 
             <Field
-              id="Phone"
+              className={styles.form__field}
+              id="phone"
               type="phone"
-              name="Phone"
+              name="phone"
               placeholder="Your phone number"
             />
-            <ErrorMessage name="Phone" className="errorMsg" component="p" />
-
-            <Field id="Email" type="email" name="Email" placeholder="E-mail" />
-            <ErrorMessage name="Email" className="errorMsg" component="p" />
+            <ErrorMessage name="phone" className={styles.form__error} component="p" />
 
             <Field
-              id="Message"
-              name="Message"
+              className={styles.form__field}
+              id="email" type="email" name="email" placeholder="E-mail" />
+            <ErrorMessage name="email" className={styles.form__error} component="p" />
+
+            <Field
+              className={styles.form__field}
+              id="message"
+              name="message"
               component="textarea"
               placeholder="Share with me your idea in here.."
             />
             <ErrorMessage
-              name="Message"
-              className="errorMsg"
+              name="message"
+              className={styles.form__error}
               component="p"
             />
 
-            <button type="submit" disabled={isSubmitting}>
+            <button className={styles.button} type="submit" disabled={isSubmitting}>
               Send
             </button>
             {serverState && (
@@ -101,59 +109,6 @@ export const ContactForm = () => {
           </Form>
         )}
       </Formik>
-
-      <style jsx>
-        {`
-          .form {
-          width: 100vw;
-          background:red;
-      }
-
-        input,
-        textarea {
-        width: calc(100vw - 60px);
-        padding: 10px 20px;
-        margin: 10px auto;
-        background: none;
-        border: none;
-        border: 1px solid #fff0f5;
-        border-radius: 5px;
-        font-size: 14px;
-        line-height: 1.6;
-        color: #444;
-        font-weight: 300;
-      }
-
-        button {
-          cursor: pointer;
-        margin: 10px auto;
-        width: 300px;
-        border: 2px solid:#ff286e;
-        background-color: #ff286e;
-        color: #fff;
-        border-radius: 5px;
-        padding: 10px;
-        font-size: 1.1rem;
-        box-shadow: 3px 10px 10px 0px rgba(93, 110, 139, 0.4);
-        transition: 0.7s;
-      }
-
-        button:hover {
-          box - shadow: 0 15px 30px 0 rgba(38, 59, 94, 0.4);
-      }
-
-        @media (max-width: 500px) {
-          button {
-          width: 100%;
-        }
-      }
-
-        .errorMsg {
-          color: #ff286e;
-      } 
-      
-        `}
-      </style>
     </>
   );
 };

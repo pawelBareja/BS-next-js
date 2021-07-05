@@ -6,13 +6,13 @@ import { company_data } from '../../data/company_data'
 
 
 
-const menuList = menu_items.map(item => <li key={item.page}><Link href={`/${item.path}`}>{item.page}</Link></li>)
+const menuList = menu_items.map( item => <li key={item.page}><Link href={`/${item.path}`}>{item.page}</Link></li> )
 
-const contactItems = company_data.map(item => <li key={item.name}>{item.name}</li>)
+const contactItems = company_data.map( item => <li key={item.name}>{item.name}</li> )
 
 const Footer = () => {
   return (
-    <li>
+    <>
       <div className="footer">
         <div className='footer__grid'>
           <div className='footer__item'>
@@ -49,6 +49,11 @@ const Footer = () => {
       </div>
       <style jsx>
         {`
+        .footer{
+          padding-top:10px;
+          margin-top:50px;
+          // border-top: 1px solid #ededed;
+        }
         .footer__grid{
             display:flex;
             flex-direction:row;
@@ -72,7 +77,7 @@ const Footer = () => {
         `
         }
       </style>
-    </li>
+    </>
   )
 }
 

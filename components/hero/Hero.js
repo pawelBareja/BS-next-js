@@ -7,10 +7,10 @@ export const Hero = () => {
   return (
     <div className={'hero'}>
       <div className={'hero__image'}>
-        <Image src='/images/hero2.png' width={600} height={400}  alt='hero' />
+        <Image src='/images/hero2.png' width={600} height={400} alt='hero' />
       </div>
       <TextBlock />
-      <ScrollDown/>
+      <ScrollDown />
       <style jsx>
         {`
           .hero {
@@ -19,15 +19,17 @@ export const Hero = () => {
             flex-direction:row;
             justify-content:flex-start;
             align-items:center;
-            width: calc(100vw - 120px);
+            width: 100%;
             height: calc(100vh - 140px);
             min-height:400px;
+            max-height:700px;
             margin:100px auto 40px;
             border-radius: 3px;
             display: flex;
             background-color: green;
             // background-image: linear-gradient(120deg, #ffa4c1 0%, #ffa4c1 100%);
             background-color:#fff0f5;
+            padding-bottom:50px;
           }
           @media (max-width: 768px) {
             .hero {

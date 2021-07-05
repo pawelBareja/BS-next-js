@@ -4,17 +4,17 @@ import Burger from './Burger'
 import { useState, useEffect } from 'react'
 
 
-export default function Navigation() {
+export default function Navigation () {
   const router = useRouter()
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState( false )
 
-  useEffect(()=>
-    console.log(router)
-  ,[router])
+  useEffect( () =>
+    console.log( router )
+    , [router] )
   return (
     <>
-      <Burger active={active} onClick={() => setActive(!active)} />
-      <div className={'container ' + (active ? 'active' : '')}>
+      <Burger active={active} onClick={() => setActive( !active )} />
+      <div className={'container ' + ( active ? 'active' : '' )}>
         <ul>
           <li>
             <Link href="/#offer">
@@ -25,7 +25,7 @@ export default function Navigation() {
             <Link href="/#projects">
               <a
                 className={
-                  router.asPath.startsWith('/#projects') ? 'active' : null
+                  router.asPath.startsWith( '/#projects' ) ? 'active' : null
                 }
               >
                 projects
@@ -46,7 +46,9 @@ export default function Navigation() {
         <style jsx>
           {`
             .container {
-              width: 100vw;
+              width: 100%;
+              max-width:1600px;
+              margin:0 auto;
               height:60px;
             }
             ul {
@@ -88,6 +90,7 @@ export default function Navigation() {
             @media (min-width: 769px) {
               .container {
                 width:100%;
+                max-width:1600px;
                 padding-right:50px;
               }
               ul {

@@ -1,27 +1,27 @@
 import { useState, useEffect } from 'react';
 import Navigation from './Navigation';
 
-export default function Navbar() {
-  const [navFixed, setNavFixed] = useState(true);
+export default function Navbar () {
+  const [navFixed, setNavFixed] = useState( true );
 
   const toggleMenu = () => {
     let distanceFromTop = window.pageYOffset;
 
     return function () {
       let newDistanceFromTop = window.pageYOffset;
-      if (newDistanceFromTop < 50 || distanceFromTop >= newDistanceFromTop) {
-        setNavFixed(true);
+      if ( newDistanceFromTop < 50 || distanceFromTop >= newDistanceFromTop ) {
+        setNavFixed( true );
       } else {
-        setNavFixed(false);
+        setNavFixed( false );
       }
       distanceFromTop = newDistanceFromTop;
     };
   };
 
-  useEffect(() => {
-    window.addEventListener('scroll', toggleMenu());
-    return window.removeEventListener('scroll', toggleMenu());
-  }, []);
+  useEffect( () => {
+    window.addEventListener( 'scroll', toggleMenu() );
+    return window.removeEventListener( 'scroll', toggleMenu() );
+  }, [] );
 
   return (
     <>
@@ -48,8 +48,9 @@ export default function Navbar() {
             top: 0;
             left: 0;
             width:100%;
+            // max-width:1600px;
             height: 60px;
-            margin:0;
+            margin:0 auto;
             background: #fff;
             // box-shadow: 0 3px 10px 0 rgba(93, 110, 139, 0.2);
             transition: 1s;

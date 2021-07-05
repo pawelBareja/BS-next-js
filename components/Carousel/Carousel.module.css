@@ -1,5 +1,5 @@
 .carousel {
-  padding: 50px 0 0;
+  padding: 50px 0;
 }
 
 .carousel__title {
@@ -13,7 +13,7 @@
 }
 
 .carousel__container:after {
-  content: "";
+  content: '';
   position: absolute;
   left: -1%;
   bottom: 0;

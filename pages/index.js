@@ -1,6 +1,6 @@
 import { Layout } from '../layout/Layout';
 import { Hero } from '../components/hero/Hero';
-// import { SectionTitle } from '../components/sectionTitle/SectionTitle'
+import { SectionTitle } from '../components/sectionTitle/SectionTitle'
 import { OfferGrid } from '../components/offerGrid/OfferGrid';
 import { ProjectGrid } from '../components/projectGrid/ProjectGrid';
 import Carousel from '../components/Carousel/Carousel';
@@ -30,8 +30,9 @@ function HomePage () {
           ]}
         />
         <About />
-        <h3>Let's talk</h3>
-        <ContactForm />
+        <SectionTitle title={`Let's talk`} subtitle={'Let me know what you are looking for, I will get back to you before 2 woring days pass'} />
+
+        < ContactForm />
       </Layout>
       <style jsx>{`
         // div {
