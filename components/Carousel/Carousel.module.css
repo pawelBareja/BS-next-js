@@ -1,0 +1,34 @@
+.carousel {
+  padding: 50px 0;
+}
+
+.carousel__title {
+  text-align: center;
+}
+
+.carousel__container {
+  /* border: 1px solid red; */
+  position: relative;
+  margin: 20px 0;
+}
+
+.carousel__container:after {
+  content: '';
+  position: absolute;
+  left: -1%;
+  bottom: 0;
+  width: 102%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 2%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 1) 98%
+  );
+}
+
+.carousel__image {
+  width: 140px !important;
+  height: 80px !important;
+  margin: 0 auto;
+}
