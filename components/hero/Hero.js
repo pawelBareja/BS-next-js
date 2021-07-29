@@ -1,13 +1,13 @@
-import Image from 'next/image'
+import Image from "next/image";
 
-import { TextBlock } from './TextBlock'
-import { ScrollDown } from './scrollDown/ScrollDown'
+import { TextBlock } from "./TextBlock";
+import { ScrollDown } from "./scrollDown/ScrollDown";
 
 export const Hero = () => {
   return (
-    <div className={'hero'}>
-      <div className={'hero__image'}>
-        <Image src='/images/hero2.png' width={600} height={400} alt='hero' />
+    <div className={"hero"}>
+      <div className={"hero__image"}>
+        <Image src="/images/hero2.png" width={600} height={400} alt="hero" />
       </div>
       <TextBlock />
       <ScrollDown />
@@ -24,7 +24,7 @@ export const Hero = () => {
             min-height:400px;
             max-height:700px;
             margin:100px auto 40px;
-            border-radius: 3px;
+             border-radius: var(--border-radius-basic);
             display: flex;
             background-color: green;
             // background-image: linear-gradient(120deg, #ffa4c1 0%, #ffa4c1 100%);
@@ -55,5 +55,5 @@ export const Hero = () => {
         `}
       </style>
     </div>
-  )
-}
+  );
+};

@@ -2,7 +2,7 @@ export default function Copyright() {
 	const today = new Date()
 	return (
 		<>
-			<p>&copy; 2018 - { today.getFullYear()} Bareja Studio All Rights Reserved</p>
+			<p data-testid="copyright">&copy; 2018 - { today.getFullYear()} Bareja Studio All Rights Reserved</p>
 			<style jsx>
 				{`
           p {
