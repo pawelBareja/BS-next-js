@@ -5,7 +5,7 @@ export default {
     repo: "pawelBareja/BS-next-js",
     branch: "main",
   },
-  media_folder: "public/img",
+  media_folder: "public/images",
   public_folder: "img",
   collections: [
     {
@@ -26,6 +26,11 @@ export default {
               label: "Hero Description",
               name: "hero_description",
               widget: "markdown",
+            },
+            {
+              label: "Hero Image",
+              name: "hero_image",
+              widget: "image",
             },
           ],
         },
