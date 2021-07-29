@@ -95,7 +95,7 @@
 
 .container__item {
   position: relative;
-  border-radius: 4px;
+  border-radius: var(--border-radius-basic);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
@@ -122,5 +122,5 @@
 }
 
 .container__subtitle {
-  color: #ff286e;
+  color: var(--color-accent);
 }

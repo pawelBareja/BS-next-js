@@ -37,5 +37,5 @@
 
 .container__subtitle,
 .container__item span {
-  color: #ff286e;
+  color: var(--color-accent);
 }
