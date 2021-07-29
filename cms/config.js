@@ -6,7 +6,7 @@ export default {
     branch: "main",
   },
   media_folder: "public/images",
-  public_folder: "img",
+  public_folder: "images",
   collections: [
     {
       name: "projects",
