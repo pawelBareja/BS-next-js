@@ -1,7 +1,6 @@
 .container {
   padding: 50px;
   display: grid;
-
   grid-template-columns: 1fr 1fr 2fr;
   grid-template-rows: auto;
   grid-template-areas: "first second third";

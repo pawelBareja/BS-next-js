@@ -5,7 +5,9 @@
 :root {
 --font-black:#272b2b;
 --color-accent:#ff286e;
+--color-white:#fff;
 --border-radius-basic: 4px;
+
 }
 
 html,
