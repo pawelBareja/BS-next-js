@@ -1,5 +1,5 @@
 import Cursor from "../components/Cursor/Cursor";
-import Header from "../components/header/Header";
+import Header from "../components/Header/Header";
 import Footer from "../components/footer/Footer";
 import BackToTopButton from "../components/backToTopButton/BackToTopButton";
 import ProgressBar from "../components/progressBar/ProgressBar";
