@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 import { TextBlock } from "./TextBlock";
 import { ScrollDown } from "./scrollDown/ScrollDown";
@@ -7,7 +7,9 @@ export const Hero = () => {
   return (
     <div className={"hero"}>
       <div className={"hero__image"}>
-        <Image src="/images/hero2.png" width={600} height={400} alt="hero" />
+        {/* <Image src="/images/hero2.png" width={600} height={400} alt="hero" />
+         */}
+        <img src="/images/hero2.png" width={600} height={400} alt="" />
       </div>
       <TextBlock />
       <ScrollDown />
