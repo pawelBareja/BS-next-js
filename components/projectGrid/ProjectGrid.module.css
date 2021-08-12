@@ -135,3 +135,7 @@
 .container__title, .container__subtitle {
   color: var(--color-white);
 }
+
+.container__title, .container__subtitle:nth-child(1) {
+  color: var(--color-accent);
+}
