@@ -12,29 +12,14 @@ export default {
       name: 'projects',
       label: 'Projects',
       create: true,
-      files: [
-        {
-          label: 'Project A',
-          name: 'firstproject',
-          file: 'content/pages/blog.md',
-          fields: [
-            {
-              label: 'Hero Title',
-              name: 'hero_title',
-              widget: 'string',
-            },
-            {
-              label: 'Hero Description',
-              name: 'hero_description',
-              widget: 'markdown',
-            },
-            {
-              label: 'Hero Image',
-              name: 'hero_image',
-              widget: 'image',
-            },
-          ],
-        },
+      folder: 'posts',
+      fields: [
+        { label: 'Title', name: 'title', widget: 'string' },
+        { label: 'Description', name: 'description', widget: 'string' },
+        { label: 'Download', name: 'download', widget: 'string' },
+        { label: 'Featured Image', name: 'thumbnail', widget: 'image' },
+        { label: 'Author', name: 'author', widget: 'string', default: 'Admin' },
+        { label: 'Body', name: 'body', widget: 'markdown' },
       ],
     },
   ],
