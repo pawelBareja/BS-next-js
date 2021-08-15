@@ -11,7 +11,7 @@ export const ProjectGrid = () => {
       </div>
       {projectItems.map((item) => {
         return (
-          <Link href={item.link}>
+          <Link href={`projects/${item.link}`}>
             <div className={styles.container__item} key={item.name}>
               <div className={styles.overlay}>
                 <div className={styles.container__text}>

@@ -4,10 +4,11 @@ import path from 'path';
 import matter from 'gray-matter';
 import Head from 'next/head';
 import marked from 'marked';
-import { Layout } from '../layout/Layout';
-import { Header } from '../components/projects/Header';
+import { Layout } from '../../layout/Layout';
+import { Header } from '../../components/projects/Header';
 
 const Post = ({ htmlString, data }) => {
+  console.log(data);
   return (
     <>
       <Head>
@@ -18,7 +19,8 @@ const Post = ({ htmlString, data }) => {
         <Header />
         <div dangerouslySetInnerHTML={{ __html: htmlString }} />
         <img src={data.thumbnail} width="200px" height="200px" />
-        <p> {data.category ? data.category : null}</p>
+        <p>{data.category}</p>
+        <p>{data.client}</p>
       </Layout>
     </>
   );

@@ -12,9 +12,8 @@ export default {
     {
       name: 'projects',
       label: 'Projects',
-      slug: `projects/{{slug}}`,
       create: true,
-      folder: 'posts',
+      folder: 'projects',
       fields: [
         { label: 'Title', name: 'title', widget: 'string' },
         { label: 'Description', name: 'description', widget: 'string' },
