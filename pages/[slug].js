@@ -4,6 +4,8 @@ import path from 'path';
 import matter from 'gray-matter';
 import Head from 'next/head';
 import marked from 'marked';
+import { Layout } from '../layout/Layout';
+import { Header } from '../components/projects/Header';
 
 const Post = ({ htmlString, data }) => {
   return (
@@ -12,13 +14,18 @@ const Post = ({ htmlString, data }) => {
         <title>{data.title}</title>
         <meta title="description" content={data.description} />
       </Head>
-      <div dangerouslySetInnerHTML={{ __html: htmlString }} />
+      <Layout>
+        <Header />
+        <div dangerouslySetInnerHTML={{ __html: htmlString }} />
+        <img src={data.thumbnail} width="200px" height="200px" />
+        <p> {data.category ? data.category : null}</p>
+      </Layout>
     </>
   );
 };
 
 export const getStaticPaths = async () => {
-  const files = fs.readdirSync('posts');
+  const files = fs.readdirSync('projects');
   console.log('files: ', files);
   const paths = files.map((filename) => ({
     params: {
@@ -35,7 +42,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params: { slug } }) => {
   const markdownWithMetadata = fs
-    .readFileSync(path.join('posts', slug + '.md'))
+    .readFileSync(path.join('projects', slug + '.md'))
     .toString();
 
   const parsedMarkdown = matter(markdownWithMetadata);

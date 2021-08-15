@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
-import Navigation from "./Navigation";
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import Navigation from './Navigation';
 
 export default function Navbar() {
   const [navFixed, setNavFixed] = useState(true);
@@ -19,20 +20,22 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", toggleMenu());
-    return window.removeEventListener("scroll", toggleMenu());
+    window.addEventListener('scroll', toggleMenu());
+    return window.removeEventListener('scroll', toggleMenu());
   }, []);
 
   return (
     <>
-      <nav className={navFixed ? "nav" : "nav hide"}>
-        <img
-          className={"nav__image jello-diagonal-2"}
-          src="/images/logo.png"
-          width={60}
-          height={60}
-          alt={"logo bareja studio"}
-        />
+      <nav className={navFixed ? 'nav' : 'nav hide'}>
+        <Link href="/">
+          <img
+            className={'nav__image jello-diagonal-2'}
+            src="/images/logo.png"
+            width={60}
+            height={60}
+            alt={'logo bareja studio'}
+          />
+        </Link>
         <Navigation />
       </nav>
 
