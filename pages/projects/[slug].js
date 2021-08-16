@@ -8,7 +8,7 @@ import { Layout } from '../../layout/Layout';
 import { Header } from '../../components/projects/Header';
 
 const Post = ({ htmlString, data }) => {
-  console.log(data);
+  const { client, category, description } = data;
   return (
     <>
       <Head>
@@ -16,11 +16,9 @@ const Post = ({ htmlString, data }) => {
         <meta title="description" content={data.description} />
       </Head>
       <Layout>
-        <Header />
-        <div dangerouslySetInnerHTML={{ __html: htmlString }} />
+        <Header client={client} category={category} description={description} />
         <img src={`/${data.thumbnail}`} width="200px" height="200px" />
-        <p>{data.category}</p>
-        <p>{data.client}</p>
+        <div dangerouslySetInnerHTML={{ __html: htmlString }} />
       </Layout>
     </>
   );

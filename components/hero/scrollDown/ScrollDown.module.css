@@ -12,7 +12,7 @@
   font-weight: 700;
 }
 
-.container__text:before,
+/* .container__text:before, */
 .container__text:after {
   content: "";
   position: absolute;
