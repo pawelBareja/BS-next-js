@@ -16,7 +16,7 @@ body {
   background-color: #fff;
   color: #222;
   font-weight: 200;
-  height: 100%;
+  width: 100%;
   /* background-color: #fbeee6; */
 }
 
@@ -90,3 +90,9 @@ a:active,
 a:hover {
   color: #000;
 }
+
+.footer__item a {
+  color: #222;
+}
+
+
