@@ -6,9 +6,11 @@ import Head from 'next/head';
 import marked from 'marked';
 import { Layout } from '../../layout/Layout';
 import { Header } from '../../components/projects/Header';
+import Gallery from '../../components/projects/Gallery';
 
 const Post = ({ htmlString, data }) => {
-  const { client, category, description } = data;
+  const { client, category, description, thumbnail, image2, image3, image4 } =
+    data;
   return (
     <>
       <Head>
@@ -17,7 +19,12 @@ const Post = ({ htmlString, data }) => {
       </Head>
       <Layout>
         <Header client={client} category={category} description={description} />
-        <img src={`/${data.thumbnail}`} width="200px" height="200px" />
+        <Gallery
+          thumbnail={thumbnail}
+          image2={image2}
+          iamge3={image3}
+          image4={image4}
+        />
         <div dangerouslySetInnerHTML={{ __html: htmlString }} />
       </Layout>
     </>

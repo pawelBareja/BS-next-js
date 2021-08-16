@@ -22,7 +22,24 @@ export default {
           label: 'Featured Image',
           name: 'thumbnail',
           widget: 'image',
-          allow_multiple: true,
+        },
+        {
+          label: 'Second image',
+          name: 'image2',
+          widget: 'image',
+          required: false,
+        },
+        {
+          label: 'Third image',
+          name: 'thimage3',
+          widget: 'image',
+          required: false,
+        },
+        {
+          label: 'Fourth image',
+          name: 'image4',
+          widget: 'image',
+          required: false,
         },
 
         { label: 'Author', name: 'author', widget: 'string', default: 'Admin' },
