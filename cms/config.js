@@ -26,7 +26,7 @@ export default {
           widget: 'select',
           options: ['corporate site', 'shop', 'landing page', 'web analytics'],
         },
-        { label: 'Body', name: 'body', widget: 'markdown', required: 'false' },
+        { label: 'Body', name: 'body', widget: 'markdown', required: false },
       ],
     },
   ],
