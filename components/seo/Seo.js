@@ -14,7 +14,12 @@ export const Seo = () => {
         property="og:title"
         content="Bareja Studio: Modern Websites ⭐ Web Analytics"
       ></meta>
-      <meta name="theme-color" content="#ff286e" />
+      <meta name="theme-color" content="#ff286e"></meta>
+      <meta name="msapplication-navbutton-color" content="#ff286e"></meta>
+      <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content="#ff286e"
+      ></meta>
       <meta property="og:type" content="website"></meta>
       <meta property="og:site_name" content="Bareja Studio"></meta>
       <meta property="og:image" content="./images/logo.svg"></meta>
