@@ -18,7 +18,7 @@ const Post = ({ htmlString, data }) => {
       <Layout>
         <Header />
         <div dangerouslySetInnerHTML={{ __html: htmlString }} />
-        <img src={data.thumbnail} width="200px" height="200px" />
+        <img src={`/${data.thumbnail}`} width="200px" height="200px" />
         <p>{data.category}</p>
         <p>{data.client}</p>
       </Layout>
