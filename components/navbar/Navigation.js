@@ -1,7 +1,7 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
-import Burger from "./Burger";
-import { useState, useEffect } from "react";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import Burger from './Burger';
+import { useState, useEffect } from 'react';
 
 export default function Navigation() {
   const router = useRouter();
@@ -11,11 +11,11 @@ export default function Navigation() {
   return (
     <>
       <Burger active={active} onClick={() => setActive(!active)} />
-      <div className={"container " + (active ? "active" : "")}>
+      <div className={'container ' + (active ? 'active' : '')}>
         <ul>
           <li>
             <Link href="/#offer">
-              <a className={router.asPath === "/#offer" ? "active" : null}>
+              <a className={router.asPath === '/#offer' ? 'active' : null}>
                 offer
               </a>
             </Link>
@@ -24,7 +24,7 @@ export default function Navigation() {
             <Link href="/#projects">
               <a
                 className={
-                  router.asPath.startsWith("/#projects") ? "active" : null
+                  router.asPath.startsWith('/#projects') ? 'active' : null
                 }
               >
                 projects
@@ -33,14 +33,14 @@ export default function Navigation() {
           </li>
           <li>
             <Link href="/#about">
-              <a className={router.asPath === "/#about" ? "active" : null}>
+              <a className={router.asPath === '/#about' ? 'active' : null}>
                 about
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/">
-              <a className={router.asPath === "/contact" ? "active" : null}>
+            <Link href="/#contact">
+              <a className={router.asPath === '/#contact' ? 'active' : null}>
                 contact
               </a>
             </Link>

@@ -1,13 +1,13 @@
 import { Layout } from '../layout/Layout';
 import { Hero } from '../components/hero/Hero';
-import { SectionTitle } from '../components/sectionTitle/SectionTitle'
+import { SectionTitle } from '../components/sectionTitle/SectionTitle';
 import { OfferGrid } from '../components/offerGrid/OfferGrid';
 import { ProjectGrid } from '../components/projectGrid/ProjectGrid';
 import Carousel from '../components/Carousel/Carousel';
-import { About } from '../components/about/About'
-import { ContactForm } from '../components/contactForm/ContactForm'
+import { About } from '../components/about/About';
+import { ContactForm } from '../components/contactForm/ContactForm';
 
-function HomePage () {
+function HomePage() {
   return (
     <>
       <Layout>
@@ -30,9 +30,16 @@ function HomePage () {
           ]}
         />
         <About />
-        <SectionTitle title={`Let's talk`} subtitle={'Let me know what you are looking for, I will get back to you before 2 woring days pass'} />
+        <div id={'contact'}>
+          <SectionTitle
+            title={`Let's talk`}
+            subtitle={
+              'Let me know what you are looking for, I will get back to you before 2 woring days pass'
+            }
+          />
 
-        < ContactForm />
+          <ContactForm />
+        </div>
       </Layout>
       <style jsx>{`
         // div {

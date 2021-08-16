@@ -101,6 +101,7 @@
   background-position: top left;
   overflow: hidden;
   cursor: pointer;
+
 }
 
 .overlay {
@@ -122,20 +123,30 @@
   flex-direction:column;
   justify-content: center;
   align-items: flex-start;
-  padding:5px;
+  padding:0 20px;
   color: var(--color-white);
+  height:100%;
 }
 
 .container__item:hover .overlay {
   opacity:0;
 }
 
-
-
 .container__title, .container__subtitle {
   color: var(--color-white);
+  padding:0;
+  margin:0;
 }
 
-.container__title, .container__subtitle:nth-child(1) {
+.container__title {
+font-size:2rem;
+}
+
+.container__item:nth-child(1) .container__subtitle  {
   color: var(--color-accent);
 }
+
+
+/* .container__title, .container__subtitle:nth-child(1) {
+  color: var(--color-accent);
+} */

@@ -15,8 +15,8 @@ export const ProjectGrid = () => {
             <div className={styles.container__item} key={item.name}>
               <div className={styles.overlay}>
                 <div className={styles.container__text}>
-                  <h4 className={styles.container__title}>{item.name}</h4>
-                  <h3 className={styles.container__subtitle}>{item.type}</h3>
+                  <p className={styles.container__subtitle}>{item.type}</p>
+                  <h3 className={styles.container__title}>{item.name}</h3>
                 </div>
               </div>
             </div>

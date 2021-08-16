@@ -1,21 +1,21 @@
-import React, { useState } from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as Yup from "yup";
-import styles from "./form.module.css";
-import axios from "axios";
+import React, { useState } from 'react';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
+import styles from './form.module.css';
+import axios from 'axios';
 
 const phoneRegExp =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
 const formSchema = Yup.object().shape({
-  name: Yup.string().required("Required field"),
+  name: Yup.string().required('Required field'),
   email: Yup.string()
-    .email("Invalid E-mail address")
-    .required("Required field"),
+    .email('Invalid E-mail address')
+    .required('Required field'),
   phone: Yup.string()
-    .matches(phoneRegExp, "phone number looks to be invalid, check it please")
-    .required("Required field"),
-  message: Yup.string().required("Required field"),
+    .matches(phoneRegExp, 'phone number looks to be invalid, check it please')
+    .required('Required field'),
+  message: Yup.string().required('Required field'),
 });
 
 export const ContactForm = () => {
@@ -26,8 +26,8 @@ export const ContactForm = () => {
   };
   const handleOnSubmit = (values, actions) => {
     axios({
-      method: "POST",
-      url: "/thankyou",
+      method: 'POST',
+      url: '/thankyou',
       data: values,
     })
       .then((response) => {
@@ -35,7 +35,7 @@ export const ContactForm = () => {
         actions.resetForm();
         handleServerResponse(
           true,
-          "Thank you, I will get back to you shortly!"
+          'Thank you, I will get back to you shortly!'
         );
       })
       .catch((error) => {
@@ -47,10 +47,10 @@ export const ContactForm = () => {
     <>
       <Formik
         initialValues={{
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
         }}
         onSubmit={handleOnSubmit}
         validationSchema={formSchema}
@@ -117,7 +117,7 @@ export const ContactForm = () => {
               Send
             </button>
             {serverState && (
-              <p className={!serverState.ok ? "errorMsg" : ""}>
+              <p className={!serverState.ok ? 'errorMsg' : ''}>
                 {serverState.msg}
               </p>
             )}
