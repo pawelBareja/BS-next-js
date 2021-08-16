@@ -18,7 +18,13 @@ export default {
         { label: 'Title', name: 'title', widget: 'string' },
         { label: 'Description', name: 'description', widget: 'string' },
         { label: 'Client', name: 'client', widget: 'string' },
-        { label: 'Featured Image', name: 'thumbnail', widget: 'image' },
+        {
+          label: 'Featured Image',
+          name: 'thumbnail',
+          widget: 'image',
+          allow_multiple: true,
+        },
+
         { label: 'Author', name: 'author', widget: 'string', default: 'Admin' },
         {
           label: 'Category',
