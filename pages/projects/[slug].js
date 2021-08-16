@@ -25,7 +25,7 @@ const Post = ({ htmlString, data }) => {
           iamge3={image3}
           image4={image4}
         />
-        <div dangerouslySetInnerHTML={{ __html: htmlString }} />
+        {/* <div dangerouslySetInnerHTML={{ __html: htmlString }} /> */}
       </Layout>
     </>
   );

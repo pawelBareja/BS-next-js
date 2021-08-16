@@ -1,26 +1,29 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Burger from './Burger';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export default function Navigation() {
   const router = useRouter();
   const [active, setActive] = useState(false);
 
-  useEffect(() => console.log(router), [router]);
+  const toggleMobileMenu = (e) => {
+    setActive(!active);
+  };
+
   return (
     <>
-      <Burger active={active} onClick={() => setActive(!active)} />
+      <Burger active={active} onClick={toggleMobileMenu} />
       <div className={'container ' + (active ? 'active' : '')}>
         <ul>
-          <li>
+          <li onClick={toggleMobileMenu}>
             <Link href="/#offer">
               <a className={router.asPath === '/#offer' ? 'active' : null}>
                 offer
               </a>
             </Link>
           </li>
-          <li>
+          <li onClick={toggleMobileMenu}>
             <Link href="/#projects">
               <a
                 className={
@@ -31,14 +34,14 @@ export default function Navigation() {
               </a>
             </Link>
           </li>
-          <li>
+          <li onClick={toggleMobileMenu}>
             <Link href="/#about">
               <a className={router.asPath === '/#about' ? 'active' : null}>
                 about
               </a>
             </Link>
           </li>
-          <li>
+          <li onClick={toggleMobileMenu}>
             <Link href="/#contact">
               <a className={router.asPath === '/#contact' ? 'active' : null}>
                 contact
