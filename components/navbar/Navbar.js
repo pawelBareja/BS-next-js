@@ -51,11 +51,9 @@ export default function Navbar() {
             top: 0;
             left: 0;
             width:100%;
-            // max-width:1600px;
             height: 60px;
             margin:0 auto;
             background: #fff;
-            // box-shadow: 0 3px 10px 0 rgba(93, 110, 139, 0.2);
             transition: 1s;
           }
 

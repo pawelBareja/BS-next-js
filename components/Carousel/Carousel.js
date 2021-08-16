@@ -1,10 +1,6 @@
-
-
-import { Component } from 'react'
-import Slider from 'react-slick'
-import styles from './Carousel.module.css'
-
-
+import { Component } from 'react';
+import Slider from 'react-slick';
+import styles from './Carousel.module.css';
 
 export default class Carousel extends Component {
   render() {
@@ -24,7 +20,7 @@ export default class Carousel extends Component {
         //     slidesToScroll: 1,
         //   },
         // },
-  
+
         // {
         //   breakpoint: 1500,
         //   settings: {
@@ -41,26 +37,26 @@ export default class Carousel extends Component {
         {
           breakpoint: 900,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
           },
         },
         {
           breakpoint: 650,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
           },
         },
       ],
-    }
-  
+    };
+
     return (
       <div id={'logos'} className={styles.carousel}>
         <h3 className={styles.carousel__title}>Clients</h3>
         <div className={styles.carousel__container}>
           <Slider {...settings}>
-            {this.props.tools.map(tool =>(
+            {this.props.tools.map((tool) => (
               <img
                 className={styles.carousel__image}
                 key={tool}
@@ -73,8 +69,6 @@ export default class Carousel extends Component {
           </Slider>
         </div>
       </div>
-    )
+    );
   }
 }
-
-
