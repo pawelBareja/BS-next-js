@@ -6,8 +6,9 @@ description: Stressless is a business page of psychology office whic is
   intuitive management system.
 client: Stresless
 thumbnail: images/hero.png
-image2: images/hero.png
-thimage3: images/hero2.png
+image2: images/1.jpg
+thimage3: images/2.jpg
+image4: images/3.jpg
 author: Admin
 category: corporate site
 ---
