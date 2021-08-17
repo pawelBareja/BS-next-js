@@ -1,12 +1,12 @@
 // import Image from "next/image";
 
-import { TextBlock } from "./TextBlock";
-import { ScrollDown } from "./scrollDown/ScrollDown";
+import { TextBlock } from './TextBlock';
+import { ScrollDown } from './scrollDown/ScrollDown';
 
 export const Hero = () => {
   return (
-    <div className={"hero"}>
-      <div className={"hero__image"}>
+    <div className={'hero'}>
+      <div className={'hero__image'}>
         {/* <Image src="/images/hero2.png" width={600} height={400} alt="hero" />
          */}
         <img src="/images/hero2.png" width={600} height={400} alt="" />
@@ -36,6 +36,7 @@ export const Hero = () => {
           @media (max-width: 768px) {
             .hero {
               width: calc(100vw - 30px);
+              height: calc(100vh - 180px);
             }
           }
 
