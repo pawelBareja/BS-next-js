@@ -31,7 +31,7 @@ export default {
         },
         {
           label: 'Third image',
-          name: 'thimage3',
+          name: 'image3',
           widget: 'image',
           required: false,
         },

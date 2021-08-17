@@ -27,7 +27,7 @@ export const ContactForm = () => {
   const handleOnSubmit = (values, actions) => {
     axios({
       method: 'POST',
-      url: '/thankyou',
+      url: process.env.contactEndPoint,
       data: values,
     })
       .then((response) => {

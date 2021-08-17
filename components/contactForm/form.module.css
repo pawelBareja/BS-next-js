@@ -5,12 +5,12 @@
 
 .form__field {
   width: calc(100% - 60px);
-  padding: 10px 20px;
+  padding: 10px 0;
   margin: 10px auto;
   background: none;
   border: none;
   border-bottom: 1px solid #444;
-   /* border-radius: var(--border-radius-basic); */
+  
   font-size: 14px;
   line-height: 1.6;
   color: #444;
@@ -42,5 +42,5 @@
 
 .form__error {
   color: red;
-  padding:0 20px;
+  padding:0;
 }

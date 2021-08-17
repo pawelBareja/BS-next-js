@@ -50,7 +50,7 @@ export default function Navbar() {
             position: fixed;
             top: 0;
             left: 0;
-            width:100%;
+            width:calc(100vw - 30px);
             height: 60px;
             margin:0 auto;
             background: #fff;

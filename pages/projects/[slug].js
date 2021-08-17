@@ -9,6 +9,7 @@ import { Header } from '../../components/projects/Header';
 import Gallery from '../../components/projects/Gallery';
 
 const Post = ({ htmlString, data }) => {
+  console.log(data);
   const { client, category, description, thumbnail, image2, image3, image4 } =
     data;
   return (

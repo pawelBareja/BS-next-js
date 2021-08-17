@@ -3,6 +3,6 @@ export const projectItems = [
   { name: 'I Loft You', type: 'Shop', link: 'iloftu' },
   { name: 'Cogen Technik', type: 'corporate site', link: 'cogen' },
   { name: 'Viva Polonia!', type: 'corporate site', link: 'viva-polonia' },
-  { name: 'StressLess', type: 'corporate site', link: 'stressless' },
+  { name: 'StressLess', type: 'corporate site', link: 'stresless' },
   { name: 'Metrostal LTD', type: 'corporate site', link: 'metrostal-ltd' },
 ];

@@ -30,12 +30,14 @@ const Footer = () => {
       <div className="footer">
         <div className="footer__grid">
           <div className="footer__item">
-            <img
-              src="/images/logo.png"
-              width={100}
-              height={50}
-              alt={'logo bareja studio'}
-            />
+            <Link href="/">
+              <img
+                src="/images/logo.png"
+                width={100}
+                height={50}
+                alt={'logo bareja studio'}
+              />
+            </Link>
           </div>
           <div className="footer__item">
             <h3>Quick Menu</h3>
@@ -64,8 +66,17 @@ const Footer = () => {
             flex-direction: row;
             justify-content: flex-start;
             flex-wrap: wrap;
-            padding: 5px;
-            border-bottom: 1px solid #ededed;
+            padding: 20px 0 5px;
+            border: 1px solid #222;
+            border-left: none;
+            border-right: none;
+          }
+          @media (max-width: 768px) {
+            .footer__grid {
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: flex-start;
+            }
           }
           .footer__item {
             flex-grow: 1;
