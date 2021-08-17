@@ -7,8 +7,9 @@ description: Stressless is a business page of psychology office whic is
 client: Stresless
 thumbnail: images/hero.png
 image2: images/1.jpg
-thimage3: images/2.jpg
-image4: images/3.jpg
 author: Admin
+thimage3: images/2.jpg
+image3: images/2.jpg
+image4: images/3.jpg
 category: corporate site
 ---
