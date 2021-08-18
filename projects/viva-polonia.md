@@ -4,8 +4,8 @@ description: Typical one page with a main goal to collect leads througn an
   online contact form. Simple and clean project with Wordpress CMS system that
   makes website content management super easy.
 client: Viva Polonia
-thumbnail: images/hero2.png
-image2: images/logo.png
+thumbnail: images/ekran_skos_conrado-1.png
+image2: ""
 author: Admin
 category: landing page
 ---
