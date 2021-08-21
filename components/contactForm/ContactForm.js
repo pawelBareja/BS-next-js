@@ -62,7 +62,7 @@ export const ContactForm = () => {
               id="name"
               type="text"
               name="name"
-              placeholder="What's your name?"
+              placeholder="Enter your name here.."
             />
             <ErrorMessage
               name="name"
@@ -75,7 +75,7 @@ export const ContactForm = () => {
               id="phone"
               type="phone"
               name="phone"
-              placeholder="Your phone number"
+              placeholder="Your phone number here please"
             />
             <ErrorMessage
               name="phone"
@@ -88,7 +88,7 @@ export const ContactForm = () => {
               id="email"
               type="email"
               name="email"
-              placeholder="E-mail"
+              placeholder="here goes your E-mail"
             />
             <ErrorMessage
               name="email"

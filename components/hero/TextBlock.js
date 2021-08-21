@@ -1,19 +1,18 @@
-
-import TextLoop from 'react-text-loop'
+import TextLoop from 'react-text-loop';
 
 export const TextBlock = () => {
   return (
-
     <div className={'hero__textblock'}>
-
       <h2 className={'hero__subtitle'}>Bareja Studio</h2>
-      <h1 className={'hero__title'}>Let's build<br/>
+      <h1 className={'hero__title'}>
+        Let's build
+        <br />
         <TextLoop
           springConfig={{ stiffness: 200, damping: 30, interval: 3000 }}
         >
-          <span>a modern website</span>
-          <span>an Online Shop</span>
-          <span>Online Analytics</span>
+          <h1>a modern website</h1>
+          <h1>an Online Shop</h1>
+          <h1>Online Analytics</h1>
         </TextLoop>
       </h1>
       <style jsx>
@@ -48,11 +47,11 @@ export const TextBlock = () => {
 
           @media (max-width:992px){
             .hero__textblock{
-              left:25px;;
+              left:25px;
           }
           }
         `}
       </style>
     </div>
-  )
-}
+  );
+};

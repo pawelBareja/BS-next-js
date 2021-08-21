@@ -1,7 +1,7 @@
 .container {
   position: absolute;
   right: -1rem;
-  bottom: 5.5rem;
+  bottom: 5.7rem;
   width: 80px;
   transform: rotate(-90deg);
   cursor: pointer;

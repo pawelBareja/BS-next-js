@@ -4,17 +4,14 @@
 }
 
 .form__field {
-  width: calc(100% - 60px);
+  width:100%;
   padding: 10px 0;
   margin: 10px auto;
   background: none;
   border: none;
-  border-bottom: 1px solid #444;
-  
-  font-size: 14px;
-  line-height: 1.6;
+  border-bottom: 1px solid #b8b9b9;
   color: #444;
-  font-weight: 300;
+  font-weight: 200;
 }
 .button {
   background: var(--color-white);
@@ -25,8 +22,6 @@
   color: var(--color-accent);
    border-radius: var(--border-radius-basic);
   padding: 10px;
-  font-size: 1.1rem;
-  /* box-shadow: 3px 10px 10px 0px rgba(93, 110, 139, 0.4); */
   transition: 0.7s;
 }
 
@@ -44,3 +39,26 @@
   color: red;
   padding:0;
 }
+
+.form ::placeholder { 
+  font-family: "Ubuntu", sans-serif;
+  color:#9b9b9b;
+  opacity: 1;
+  font-weight:200;
+  font-size:1.4rem;
+}
+
+.form :-ms-input-placeholder { 
+  font-family: "Ubuntu", sans-serif;
+  font-weight:200;
+  color:#9b9b9b;
+  font-size:1.4rem;
+}
+
+.form ::-ms-input-placeholder { 
+  font-family: "Ubuntu", sans-serif;
+  font-weight:200;
+  color:#9b9b9b;
+  font-size:1.4rem;
+}
+

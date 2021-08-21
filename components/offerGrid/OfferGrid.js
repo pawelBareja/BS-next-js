@@ -1,11 +1,11 @@
 // import Image from 'next/image';
-import Link from "next/link";
-import styles from "./OfferGrid.module.css";
-import { gridItems } from "./gridItems";
+import Link from 'next/link';
+import styles from './OfferGrid.module.css';
+import { gridItems } from './gridItems';
 
 export const OfferGrid = () => {
   return (
-    <div id={"offer"} className={styles.container}>
+    <div id={'offer'} className={styles.container}>
       <div className={styles.container__item}>
         <div className={styles.container__text}>
           <p className={styles.container__subtitle}>The offer</p>
@@ -22,7 +22,7 @@ export const OfferGrid = () => {
                 <h4>{title}</h4>
                 <p dangerouslySetInnerHTML={{ __html: subtitle }} />
                 <Link href={link}>
-                  <a>{textLink}</a>
+                  <a className={styles.link}>{textLink}</a>
                 </Link>
               </div>
             </div>
