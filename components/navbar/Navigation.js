@@ -96,7 +96,6 @@ export default function Navigation() {
               .container {
                 width: 100%;
                 max-width: 1600px;
-                padding-right: 50px;
               }
               ul {
                 padding: 0;

@@ -28,13 +28,18 @@ export default function Navbar() {
     <>
       <nav className={navFixed ? 'nav' : 'nav hide'}>
         <Link href="/">
-          <img
+          {/* <img
             className={'nav__image jello-diagonal-2'}
             src="/images/logo.png"
             width={60}
             height={60}
             alt={'logo bareja studio'}
-          />
+          /> */}
+          <p className="logo">
+            bareja
+            <br />
+            studio
+          </p>
         </Link>
         <Navigation />
       </nav>
@@ -42,6 +47,7 @@ export default function Navbar() {
       <style jsx>
         {`
           .nav {
+            box-sizing:border-box;
             z-index: 10;
             display: flex;
             flex-direction: row;
@@ -50,25 +56,33 @@ export default function Navbar() {
             position: fixed;
             top: 0;
             left: 0;
-            width:calc(100vw - 30px);
-            height: 60px;
+            width:100%;
+            height: 80px;
             margin:0 auto;
+            padding:15px 50px 0;
             background: #fff;
             transition: 1s;
           }
-
-          @media (min-width: 769px) {
-          .nav__image{
-            padding-left:50px;
+          
+          .logo{
+            font-size: 25px;
+            line-height: 1;
+            font-weight: 200;
+            margin: 0px;
+            color: var(--font-black);
           }
-        }
+          @media (max-width:768px){
+            .nav {
+             padding:0 10px;
+            }
+          }
 
           @media (max-width:692px){
             .nav {
              width:100vw;
              margin:0 15px;
             }
-}
+          }
 
           .hide {
             transform: translateY(-60px);
