@@ -19,9 +19,9 @@ export const OfferGrid = () => {
             <div className={styles.container__item} key={title}>
               <img src={src} width={width} height={height} alt={alt} />
               <div className={styles.container__text}>
-                <h4>{title}</h4>
-                <p dangerouslySetInnerHTML={{ __html: subtitle }} />
-                <Link href={link}>
+                <h4 className={styles.container__title}>{title}</h4>
+                <p className={styles.container__content} dangerouslySetInnerHTML={{ __html: subtitle }} />
+                <Link  href={link}>
                   <a className={styles.link}>{textLink}</a>
                 </Link>
               </div>

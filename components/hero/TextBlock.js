@@ -5,14 +5,14 @@ export const TextBlock = () => {
     <div className={'hero__textblock'}>
       <h2 className={'hero__subtitle'}>Bareja Studio</h2>
       <h1 className={'hero__title'}>
-        Let's build
+        What you need?
         <br />
         <TextLoop
           springConfig={{ stiffness: 200, damping: 30, interval: 3000 }}
         >
-          <h1>a modern website</h1>
-          <h1>an Online Shop</h1>
-          <h1>Online Analytics</h1>
+          <h1>Web Developement</h1>
+          <h1>Online Shop</h1>
+          <h1>Web Analytics</h1>
         </TextLoop>
       </h1>
       <style jsx>

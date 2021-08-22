@@ -7,7 +7,7 @@ export const ProjectGrid = () => {
     <div id={'projects'} className={styles.container}>
       <div className={styles.container__item}>
         <p className={styles.container__subtitle}>Take a look at..</p>
-        <h3>Projects completed</h3>
+        <h3>Completed projects</h3>
       </div>
       {projectItems.map((item) => {
         return (

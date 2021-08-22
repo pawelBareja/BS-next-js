@@ -1,7 +1,7 @@
 ---
 title: metrostal
-description: A typical multilanguage corpoprate site, build with use of
-  wordpress cms for convient content management.
+description: The website is a multilanguage corpoprate one, it has been built with the use of
+  Wordpress cms for convenient content management.
 client: Mero-Stal LTD
 thumbnail: images/ekran_skos_metrostalpolska.png
 image2: images/mobile_skos_metrostalpolska.png

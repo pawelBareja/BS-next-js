@@ -34,7 +34,7 @@ function HomePage() {
           <SectionTitle
             title={`Let's talk`}
             subtitle={
-              'Let me know what you are looking for, I will get back to you before 2 woring days pass'
+              'Let me know what you are looking for. I will get back to you within 2 working days.'
             }
           />
 

@@ -11,6 +11,7 @@
 
 .container__item {
   text-align: right;
+  position:relative;
 }
 
 .container__text {
@@ -18,6 +19,18 @@
   display:flex;
   flex-direction:column;
 }
+
+.container__title {
+ margin-bottom:0;
+}
+
+
+.container__content {
+padding-bottom:40px;
+ }
+ 
+
+
 
 @media (max-width: 1024px) {
   .container {
@@ -37,7 +50,7 @@
   }
 }
 
-.container__subtitle,
+
 .container__item span {
   color: var(--color-accent);
 }
@@ -45,4 +58,7 @@
 
 a.link  {
   text-decoration:underline;
+    position:absolute;
+    bottom:0;
+    left:0;
 }

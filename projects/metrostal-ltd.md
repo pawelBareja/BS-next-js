@@ -1,7 +1,7 @@
 ---
 title: metrostal-ltd
-description: It is already a second website produced for the same client, as
-  before it is a multilanguge corporate site.
+description: The site is already a second project for the same client, similarly as
+  before it is also a multilanguge corporate site.
 client: Metrostal LTD
 thumbnail: images/mobile_skos_metrostal-1.png
 image2: images/hero.png

@@ -1,6 +1,6 @@
 ---
 title: Cogen
-description: Multilangnuage business site backed with wordpress cms.
+description: Multilingual business site built with use of a popular wordpress cms.
 client: Cogentechnik
 thumbnail: images/cogen.png
 image2: images/cogen2.png

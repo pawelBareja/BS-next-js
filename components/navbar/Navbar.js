@@ -59,7 +59,7 @@ export default function Navbar() {
             width:100%;
             height: 80px;
             margin:0 auto;
-            padding:15px 50px 0;
+            padding:15px 50px;
             background: #fff;
             transition: 1s;
           }
@@ -85,7 +85,7 @@ export default function Navbar() {
           }
 
           .hide {
-            transform: translateY(-60px);
+            transform: translateY(-80px);
           }
           main {
             margin-top:80px;

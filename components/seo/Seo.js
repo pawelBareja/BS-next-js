@@ -12,7 +12,7 @@ export const Seo = () => {
       ></meta>
       <meta
         property="og:title"
-        content="Bareja Studio: Modern Websites ⭐ Web Analytics"
+        content="Bareja Studio: Web Design ⭐ Web Analytics"
       ></meta>
       <meta name="theme-color" content="#ff286e"></meta>
       <meta name="msapplication-navbutton-color" content="#ff286e"></meta>
@@ -28,20 +28,20 @@ export const Seo = () => {
       <meta name="twitter:site" content="@PLsPolska"></meta>
       <meta
         name="twitter:title"
-        content="Bareja Studio: Modern Websites ⭐ Web Analytics"
+        content="Bareja Studio: Web Design ⭐ Web Analytics"
       ></meta>
       <meta
         name="description"
-        content="Create a modern and Innovative Website together. Engage Your Target Audience and Measeure all online activities with professional web analytics . …  read more
+        content="Hi, I am Paweł web developer, providing fresh, creative projects to businesses who be noticed online…  read more
  "
       ></meta>
       <meta
         property="og:description"
-        content="Create a modern and Innovative Website together. Engage Your Target Audience and Measeure all online activities with professional web analytics . …  read more"
+        content="Hi, I am Paweł web developer, providing fresh, creative projects to businesses who be noticed online…  read more"
       ></meta>
       <meta
         name="twitter:description"
-        content="Create a modern and Innovative Website together. Engage Your Target Audience and Measeure all online activities with professional web analytics . …  read more"
+        content="Hi, I am Paweł web developer, providing fresh, creative projects to businesses who be noticed online…  read more"
       ></meta>
       <meta property="og:url" content="https://barejastudio.pl/"></meta>
 

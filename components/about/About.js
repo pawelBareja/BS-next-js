@@ -15,29 +15,29 @@ export const About = () => {
         <div className={styles.container__second}>
           <div>
             <p>
-              So, you want to have your busines visible on the net. How to get
-              visible on the world wide web with your business?
+              So, you want to get your busines seen on the net. How to achieve that visibility?
             </p>
+            <p>
+              The answer is... you do not need a pink as a leading color accent on
+              your site. It is distictive for sure, but I just used it because I
+              think it's cool to have Giro'd Italia theme color on the page as
+              Giro is my favorite cycling race, and cycling is my passion. Ok, so
+              that was a personal bit of information about me.</p>
           </div>
         </div>
 
         <div className={styles.container__third}>
           <div>
-            <p>
-              The answer is... you do not need pink as a leading color accent on
-              your site, it is distictive for sure but I just used it because I
-              think it's cool to have Giro'd Italia theme color on the page as
-              Giro is my favorite cycling race, and cycling is my hobby. Ok, so
-              that was personal bit of inforamtion about me. Now let's get to
-              business - how to get visible on the internet? Trust someone who
-              will create your side technicaly flawless. Prepared from the
-              techncal SEO point of view but remember since one never can achive
-              excelence look for someone that will integtate analytics tools to
-              measure the performance of the site and track users behaviour and
-              respond to your site so that you can develop it and become more
-              effective.
+
+              
+              <p>Now let's get to
+              business - how to get visiblity on the Internet? The simplest way is to trust someone who
+              will create your site technicaly flawless and will not forget about the SEO requirements.</p><p> Last thing you need to remember is that one never can achive
+              excelence, that is why you will need the analytics tools integrated. It is crucial
+              to measure the performance of the site, track users behaviour and
+              respond to their needs so you can achieve maximum efficiency of your site.
             </p>
-            <p>If you think the same I could be the guy:)</p>
+       <p>I would be happy to support you on your project developement.</p>
             {/* <Image
             className={'nav__image'}
             src="/images/signature.png"

@@ -116,11 +116,16 @@ a {
 
 a:active,
 a:hover {
-  color: #000;
+  color: var(--color-accent);
 }
 
-.footer__item a {
+/* .footer__item a {
   color: #222;
 }
+
+a:visited, a:active,
+a:hover {
+  color: var(--color-accent);
+} */
 
 

@@ -1,7 +1,6 @@
 ---
 title: iloftu
-description: Iloftu is an online shop, where nice desing goes in line with
-  sensible product presentation and convient checkout process.
+description: Iloftu is an online shop, it feature nice desing and artactive product presentation. The shop has a very intuitive transaction process with many payment options.
 client: I Loft U
 thumbnail: images/mobile_skos_iloftu.png
 image2: images/mobile_skos_iloftu_sklep.png
