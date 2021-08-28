@@ -1,12 +1,12 @@
 ---
 title: viva-polonia
-description: Typical one pager where a main goal is to collect leads through out an
-  online contact form. This simple and clean project is backed with Wordpress CMS that
-  makes website content management super easy.
+description: Typical one pager where a main goal is to collect leads through out
+  an online contact form. This simple and clean project is backed with Wordpress
+  CMS that makes website content management super easy.
 client: Viva Polonia
 thumbnail: images/viva.png
 image2: images/viva2.png
-image3: images/ekran_skos_conrado-1.png
+image3: images/metrolaptop.png
 author: Admin
 category: landing page
 ---
