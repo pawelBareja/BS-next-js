@@ -15,8 +15,8 @@ export default function Burger({ active, onClick }) {
               width: 38px;
               height: 38px;
               cursor: pointer;
-              top: 1rem;
-              right: 1.25rem;
+              top: 22px;
+              right: 25px;
               background-color: rgba(255, 255, 255, 0.7);
             }
             .meat {

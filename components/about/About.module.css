@@ -55,7 +55,7 @@ font-weight:500;
     grid-template-areas:
       "first third"
       "second third";
-    align-items: top;
+    align-items: center;
   }
 }
 

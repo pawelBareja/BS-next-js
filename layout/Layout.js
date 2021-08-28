@@ -22,7 +22,7 @@ export const Layout = ({ children }) => {
           }
           @media (max-width: 768px) {
             .main {
-              width: calc(100vw - 30px);
+              width: calc(100vw - 60px);
               margin: 0 auto;
             }
           }

@@ -36,7 +36,7 @@ export default function Navbar() {
             alt={'logo bareja studio'}
           /> */}
           <p className="logo">
-            bareja
+           <span style={{fontSize:'14px', letterSpacing:'6px'}}>bareja</span> 
             <br />
             studio
           </p>
@@ -80,7 +80,7 @@ export default function Navbar() {
           @media (max-width:692px){
             .nav {
              width:100vw;
-             margin:0 15px;
+             padding:0 20px;
             }
           }
 
