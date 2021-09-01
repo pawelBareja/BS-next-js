@@ -8,7 +8,6 @@ client: Stresless
 thumbnail: images/stresless2.png
 image2: images/stresless.png
 author: Admin
-thimage3: images/2.jpg
 image3: images/streslesslaptop.png
 image4: ""
 category: corporate site

@@ -9,7 +9,7 @@ export const Hero = () => {
       <div className={'hero__image'}>
         {/* <Image src="/images/hero2.png" width={600} height={400} alt="hero" />
          */}
-        <img src="/images/hero2.png" width={600} height={400} alt="" />
+        <img src="/images/hero2.png" width={700} height={383} alt="" />
       </div>
       <TextBlock />
       <ScrollDown />
@@ -47,11 +47,13 @@ export const Hero = () => {
             flex-direction:column;
             justify-content:flex-end;
             align-items:flex-end;
+            
           }
 
           .hero__image img {
             max-width:100vw;
             margin-bottom:-30px;
+            margin-right:40px;
             height:auto;
           }
           }

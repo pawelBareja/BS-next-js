@@ -32,17 +32,17 @@
   }
   
   @media (max-width: 768px) {
-    /* .container {
+    .container {
       padding: 50px 0 0;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 200px 200px 200px 200px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
       grid-template-areas:
-        'one two'
-        'three four'
-        'five six'
-        'seven seven';
-    } */
+        'one '
+        'two '
+        'three '
+        'four';
+    } 
 
   }
   

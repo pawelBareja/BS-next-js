@@ -2,7 +2,7 @@ import Link from 'next/link'
 export default function Copyright() {
 	const today = new Date()
 	return (
-		<div>	<div className='links'><Link href="#"><span  className='links__link'>Privacy Policy</span></Link> | <Link href="#"><span  className='links__link'>Terms & Conditions</span></Link></div>
+		<div>	<div className='links'><Link href="/privacy-policy"><span  className='links__link'>Privacy Policy</span></Link></div>
 			<p data-testid="copyright">&copy; 2018 - { today.getFullYear()} Bareja Studio All Rights Reserved</p>
 		
 			<style jsx>
