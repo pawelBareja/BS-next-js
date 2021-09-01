@@ -7,6 +7,7 @@ client: Viva Polonia
 thumbnail: images/viva.png
 image2: images/viva2.png
 image3: images/metrolaptop.png
+image4: images/metrolaptop.png
 author: Admin
 category: landing page
 ---
