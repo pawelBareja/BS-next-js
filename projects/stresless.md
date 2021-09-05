@@ -1,6 +1,6 @@
 ---
 title: stressless
-description: Stressless is a business page which belongs to a psychology. It
+description: Stressless is a page dedicated to psychology. It
   also has features typical for a lead generation landing page. This
   multilanguage service contains also a blog and a very intuitive management
   system.
