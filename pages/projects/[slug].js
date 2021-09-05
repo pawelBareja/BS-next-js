@@ -23,7 +23,7 @@ const Post = ({ htmlString, data }) => {
         <Gallery
           thumbnail={thumbnail}
           image2={image2}
-          iamge3={image3}
+          image3={image3}
           image4={image4}
         />
         {/* <div dangerouslySetInnerHTML={{ __html: htmlString }} /> */}
