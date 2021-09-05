@@ -48,6 +48,7 @@ export const TextBlock = () => {
           @media (max-width:992px){
             .hero__textblock{
               left:25px;
+              top:20%;
           }
           }
         `}

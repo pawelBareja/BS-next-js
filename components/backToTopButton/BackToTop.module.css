@@ -28,3 +28,17 @@
   left: -1rem;
   width: 10px;
 }
+
+@media (max-width: 768px) {
+  .container__text:before
+  {
+    bottom: 7px;
+    left:6rem;
+    height: 1px;
+  }
+  .container__text:after {
+    left: -1.5rem;
+    width: 10px;
+    bottom:7px;
+  }
+}

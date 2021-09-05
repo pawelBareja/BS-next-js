@@ -47,7 +47,7 @@ export default {
           label: 'Category',
           name: 'category',
           widget: 'select',
-          options: ['corporate site', 'shop', 'landing page', 'web analytics'],
+          options: ['Corporate site', 'Shop','Landing page', 'Web analytics'],
         },
         { label: 'Body', name: 'body', widget: 'markdown', required: false },
       ],

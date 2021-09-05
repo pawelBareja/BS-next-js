@@ -13,6 +13,16 @@
   color: #444;
   font-weight: 200;
 }
+
+.form__checkbox{
+display:block;
+margin-top:20px;
+}
+
+.form__checkbox input{
+margin-right:20px;
+  } 
+
 .button {
   background: var(--color-white);
   border: 3px solid var(--color-accent);

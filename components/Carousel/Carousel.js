@@ -10,7 +10,7 @@ export default class Carousel extends Component {
       slidesToScroll: 1,
       autoplay: true,
       speed: 8000,
-      // autoplaySpeed: 5000,
+      autoplaySpeed: 10,
       cssEase: 'linear',
       responsive: [
         // {
@@ -30,14 +30,14 @@ export default class Carousel extends Component {
         {
           breakpoint: 1200,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
           },
         },
         {
           breakpoint: 900,
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
           },
         },

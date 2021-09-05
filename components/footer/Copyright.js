@@ -16,6 +16,7 @@ export default function Copyright() {
 				.links__link {
 					font-size: 12px;
 					line-height:1.3;
+					cursor:pointer;
 			
 				}
                  p {

@@ -41,7 +41,7 @@ export const Hero = () => {
           }
 
           .hero__image {
-            height:100%;
+            height:85%;
             width:100%;
             display:flex;
             flex-direction:column;
@@ -51,12 +51,11 @@ export const Hero = () => {
           }
 
           .hero__image img {
-            max-width:100vw;
-            margin-bottom:-30px;
-            margin-right:40px;
+            max-width:700px;
+            width:90%;
             height:auto;
           }
-          }
+          
         `}
       </style>
     </div>

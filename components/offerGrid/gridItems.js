@@ -26,9 +26,9 @@ export const gridItems = [
     alt: 'dekstop monitor',
     height: 159,
     width: 180,
-    title: 'Web Analyitcs',
+    title: 'Web Analytics',
     subtitle:
-      '<span>Would you like to find out who visits your website and why?</span> What he or she or ...it (bots) searches for? Check whether you manage your advertisement budget wisely.',
+      '<span>Would you like to find out who visits your website and why?</span> What he or she or ...it (bots) searches for? Check whether you manage your advertising budget wisely.',
     link: '/#contact',
     textLink: 'ask more',
   },

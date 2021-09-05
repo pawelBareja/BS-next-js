@@ -16,6 +16,8 @@ const formSchema = Yup.object().shape({
     .matches(phoneRegExp, 'phone number looks to be invalid, check it please')
     .required('Required field'),
   message: Yup.string().required('Required field'),
+  checkbox:  Yup.boolean()
+  .oneOf([true],"Consent is required")
 });
 
 export const ContactForm = () => {
@@ -51,6 +53,7 @@ export const ContactForm = () => {
           email: '',
           phone: '',
           message: '',
+          checkbox:false
         }}
         onSubmit={handleOnSubmit}
         validationSchema={formSchema}
@@ -116,6 +119,21 @@ export const ContactForm = () => {
             >
               Send
             </button>
+
+            <label className={styles.form__checkbox}>
+              <Field
+                id="checkbox"
+                type="checkbox"
+                name="checkbox"
+              />
+              I accept the <a target="blank" href='/privacy-policy'>Privacy Policy</a>
+            </label>
+            <ErrorMessage
+              name="checkbox"
+              className={styles.form__error}
+              component="p"
+            />
+
             {serverState && (
               <p className={!serverState.ok ? 'errorMsg' : ''}>
                 {serverState.msg}
