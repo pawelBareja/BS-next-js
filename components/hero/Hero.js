@@ -36,7 +36,7 @@ export const Hero = () => {
           @media (max-width: 768px) {
             .hero {
               width: calc(100vw - 60px);
-              height: calc(100vh - 180px);
+              height: calc(100vh - 250px);
             }
           }
 
