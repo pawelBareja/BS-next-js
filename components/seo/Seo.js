@@ -63,6 +63,7 @@ export const Seo = () => {
         type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
+      <meta name="google-site-verification" content="iVQejhgGdZ9NSe5MdX0ZtN4acfJDOc6kEDGVd7tE0cs" />
       <script dangerouslySetInnerHTML={{
         __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
