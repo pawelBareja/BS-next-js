@@ -30,7 +30,7 @@ export const company_data = [
     },
     {
         title: "e-mail",
-        name: "e-mail: halo@barejstudio.pl",
-        link: "mailto:.halo@barejstudio.pl"
+        name: "e-mail: halo@barejastudio.pl",
+        link: "mailto:.halo@barejastudio.pl"
     },
 ]
